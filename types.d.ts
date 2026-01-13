@@ -2794,8 +2794,8 @@ declare class Compiler {
 				(
 					value: object | object[],
 					schema: Schema,
-					check?: (value?: any) => boolean,
-					options?: ValidationErrorConfiguration
+					options?: ValidationErrorConfiguration,
+					check?: (value?: any) => boolean
 				) => void
 			]
 		>;
@@ -2891,8 +2891,8 @@ declare class Compiler {
 	validate(
 		value: object | object[],
 		schema: Schema,
-		check?: (value?: any) => boolean,
-		options?: ValidationErrorConfiguration
+		options?: ValidationErrorConfiguration,
+		check?: (value?: any) => boolean
 	): void;
 }
 declare class ConcatSource extends Source {
