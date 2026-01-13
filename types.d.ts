@@ -3267,7 +3267,7 @@ declare interface Configuration {
 	target?: string | false | string[];
 
 	/**
-	 * Enable validation of webpack configuration. Defaults to false in development mode and true in production mode.
+	 * Enable validation of webpack configuration. Defaults to true in development mode. In production mode, defaults to true unless futureDefaults is enabled, then defaults to false.
 	 */
 	validate?: boolean;
 
@@ -18918,7 +18918,7 @@ declare interface WebpackOptionsNormalized {
 	target?: string | false | string[];
 
 	/**
-	 * Enable validation of webpack configuration. Defaults to false in development mode and true in production mode.
+	 * Enable validation of webpack configuration. Defaults to true in development mode. In production mode, defaults to true unless futureDefaults is enabled, then defaults to false.
 	 */
 	validate?: boolean;
 
