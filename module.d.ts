@@ -8,8 +8,7 @@ declare namespace webpack {
 				chain: (number | string)[];
 				/** the module id of the declining parent */
 				parentId: number | string;
-		  }
-		| {
+		  } {
 				type: "self-declined";
 				/** The module in question. */
 				moduleId: number | string;
