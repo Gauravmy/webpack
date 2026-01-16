@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 "use strict";
-
 /**
  * @param {string} command process to run
  * @param {string[]} args command line arguments
@@ -9,7 +8,6 @@
  */
 const runCommand = (command, args) => {
 	const cp = require("child_process");
-
 	return new Promise((resolve, reject) => {
 		const executedCommand = cp.spawn(command, args, {
 			stdio: "inherit",
