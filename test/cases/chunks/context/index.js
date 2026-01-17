@@ -5,6 +5,5 @@ it("should also work in a chunk", function(done) {
 		var tw = "tw";
 		expect(require("." + "/" + tw + "o")).toBe(2);
 		done();
-	});
-});
+	})});
 
